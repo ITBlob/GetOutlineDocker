@@ -30,6 +30,14 @@
     -->
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <InvariantGlobalization>false</InvariantGlobalization>
+
+    <!--
+      MVVMTK0045 advises replacing [ObservableProperty] fields with partial properties so the
+      CsWinRT generators can emit AOT-safe marshalling. Partial properties are C# 13, which is
+      unavailable on .NET 8, and this app is neither trimmed nor AOT-compiled - so the advice
+      cannot be taken and does not apply. Silenced deliberately to keep real warnings visible.
+    -->
+    <NoWarn>$(NoWarn);MVVMTK0045</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
