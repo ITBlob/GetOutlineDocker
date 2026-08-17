@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Windows-tuned, but deliberately targets plain net8.0 rather than net8.0-windows.
+
+    Everything here is written for Windows behaviour - FileSystemWatcher's 64 KB internal
+    buffer and its overflow semantics, case-insensitive path comparison, %LOCALAPPDATA%
+    settings - but none of it needs the Windows-only API surface. Keeping the target
+    framework neutral means this layer is covered by the Linux test job as well as the
+    Windows one, instead of being provable only on a runner we cannot debug interactively.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>Storybloq.Reader.Platform</RootNamespace>
+    <AssemblyName>Storybloq.Reader.Platform</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Storybloq.Reader.Core\Storybloq.Reader.Core.csproj" />
+  </ItemGroup>
+
+</Project>
