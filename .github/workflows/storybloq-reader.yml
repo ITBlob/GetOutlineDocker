@@ -3,8 +3,9 @@ name: Storybloq Reader
 # Scoped to the reader so it never runs for Outline changes, and Outline's own
 # workflows never run for reader changes.
 on:
+  # No branch filter: the WinUI app cannot be compiled anywhere but a Windows
+  # runner, so feature branches need the same proof as main.
   push:
-    branches: [main]
     paths:
       - "storybloq-reader/**"
       - ".github/workflows/storybloq-reader.yml"
