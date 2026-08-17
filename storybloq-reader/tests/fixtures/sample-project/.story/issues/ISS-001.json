@@ -1,0 +1,6 @@
+{
+  "id": "ISS-001", "title": "Race condition on autosave", "status": "open", "severity": "critical",
+  "components": ["editor", "sync"], "impact": "Edits can be lost when two saves overlap.",
+  "location": "app/editor/autosave.ts", "discoveredDate": "2026-02-14",
+  "relatedTickets": ["T-004"], "phase": "p2", "updatedAt": "2026-02-14T09:00:00Z"
+}

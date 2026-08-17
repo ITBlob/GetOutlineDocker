@@ -1,0 +1,10 @@
+{
+  "id": "ISS-004", "title": "Unbounded retry loop", "status": "open", "severity": "high",
+  "components": ["sync"], "impact": "Client can hammer the API after a 500.",
+  "location": "app/sync/retry.ts", "discoveredDate": "2026-03-05",
+  "relatedTickets": ["T-006"], "updatedAt": "2026-03-05T09:00:00Z",
+  "sourceRefs": [
+    { "path": "app/sync/retry.ts", "startLine": 42, "endLine": 68,
+      "revision": "9f2c1ab4", "contentHash": "3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855e" }
+  ]
+}

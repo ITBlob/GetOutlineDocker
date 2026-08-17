@@ -1,0 +1,2 @@
+{ "version": "0.1.5", "project": "Broken", "type": "application", "language": "go",
+  "features": { "tickets": true, "issues": true, "handovers": true, "roadmap": true, "reviews": true } }

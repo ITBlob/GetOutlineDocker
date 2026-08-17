@@ -1,0 +1,7 @@
+{
+  "id": "T-008", "title": "Abandoned spike", "description": "Deleted, must not appear anywhere.",
+  "type": "task", "status": "open", "phase": "p3", "order": 8,
+  "createdDate": "2026-02-03", "completedDate": null, "blockedBy": [],
+  "lifecycle": "deleted", "deletedAt": "2026-02-05T12:00:00Z", "deletedBy": "riley",
+  "updatedAt": "2026-02-05T12:00:00Z"
+}

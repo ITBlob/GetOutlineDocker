@@ -1,0 +1,6 @@
+{
+  "id": "T-001", "title": "Healthy ticket", "description": "Loads fine.",
+  "type": "task", "status": "open", "phase": null, "order": 1,
+  "createdDate": "2026-01-01", "completedDate": null, "blockedBy": [],
+  "updatedAt": "2026-01-01T09:00:00Z"
+}

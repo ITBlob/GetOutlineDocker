@@ -1,0 +1,6 @@
+{
+  "id": "T-011", "title": "Follow-up to the spike", "description": "Blocked only by a deleted ticket.",
+  "type": "task", "status": "open", "phase": "p3", "order": 11, "blockedBy": ["T-008"],
+  "createdDate": "2026-03-02", "completedDate": null,
+  "updatedAt": "2026-03-02T10:00:00Z"
+}

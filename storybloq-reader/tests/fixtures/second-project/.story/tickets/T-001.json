@@ -1,0 +1,6 @@
+{
+  "id": "T-001", "title": "Ship the ingest worker", "description": "Blocked on an unknown reference.",
+  "type": "feature", "status": "open", "phase": null, "order": 1,
+  "createdDate": "2026-03-01", "completedDate": null, "blockedBy": ["T-404"],
+  "updatedAt": "2026-03-01T09:00:00Z"
+}

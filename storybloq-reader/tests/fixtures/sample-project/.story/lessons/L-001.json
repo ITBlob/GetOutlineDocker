@@ -1,0 +1,6 @@
+{
+  "id": "L-001", "title": "Debounce filesystem events", "content": "Always coalesce; writers are not atomic from the reader's point of view.",
+  "context": "Learned while building the watcher.", "source": "postmortem", "tags": ["fs", "windows"],
+  "reinforcements": 3, "lastValidated": "2026-03-10", "createdDate": "2026-02-01", "updatedDate": "2026-03-10",
+  "supersedes": null, "status": "active", "updatedAt": "2026-03-10T09:00:00Z"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "T-007", "title": "Keyboard shortcuts", "description": "Bindings and help overlay.",
+  "type": "chore", "status": "open", "phase": "p3", "order": 7,
+  "createdDate": "2026-02-02", "completedDate": null, "blockedBy": ["T-002"],
+  "updatedAt": "2026-02-02T10:00:00Z"
+}

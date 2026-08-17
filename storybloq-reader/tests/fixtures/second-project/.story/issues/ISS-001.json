@@ -1,0 +1,5 @@
+{
+  "id": "ISS-001", "title": "Credentials logged in plaintext", "status": "open", "severity": "critical",
+  "components": ["auth"], "impact": "Secrets reach the log sink.", "location": "auth/session.py",
+  "discoveredDate": "2026-03-08", "relatedTickets": [], "updatedAt": "2026-03-08T09:00:00Z"
+}

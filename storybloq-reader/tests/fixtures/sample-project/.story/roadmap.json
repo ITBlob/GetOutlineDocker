@@ -1,0 +1,14 @@
+{
+  "title": "Aurora Roadmap",
+  "date": "2026-01-10",
+  "phases": [
+    { "id": "p1", "label": "Phase 1", "name": "Foundations", "description": "Project skeleton and data layer." },
+    { "id": "p2", "label": "Phase 2", "name": "Editor", "description": "The editing surface.", "summary": "In flight." },
+    { "id": "p3", "label": "Phase 3", "name": "Polish", "description": "Performance and accessibility." }
+  ],
+  "blockers": [
+    { "name": "Design review sign-off", "cleared": true },
+    { "name": "Upstream API contract", "createdDate": "2026-02-03", "clearedDate": "2026-02-20", "note": "Contract frozen." },
+    { "name": "Windows signing certificate", "createdDate": "2026-03-01", "clearedDate": null, "note": "Still with procurement." }
+  ]
+}

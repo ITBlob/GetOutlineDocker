@@ -1,0 +1,6 @@
+{
+  "id": "ISS-002", "title": "Slow cold start", "status": "resolved", "severity": "high",
+  "components": ["server"], "impact": "First request took 4s.", "location": "server/boot.ts",
+  "discoveredDate": "2026-01-20", "resolvedDate": "2026-02-01",
+  "relatedTickets": [], "updatedAt": "2026-02-01T14:00:00Z"
+}

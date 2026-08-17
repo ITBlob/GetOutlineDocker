@@ -1,0 +1,7 @@
+{
+  "id": "T-010", "title": "Future status", "description": "Status this reader has never heard of.",
+  "type": "task", "status": "paused", "phase": "p3", "order": 10,
+  "createdDate": "2026-03-01", "completedDate": null, "blockedBy": [],
+  "updatedAt": "2026-03-01T10:00:00Z",
+  "reviewLens": { "added": "by a newer release", "depth": 3 }
+}

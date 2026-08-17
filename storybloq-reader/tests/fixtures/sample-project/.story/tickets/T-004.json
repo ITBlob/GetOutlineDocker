@@ -1,0 +1,7 @@
+{
+  "id": "T-004", "title": "Rich text model", "description": "Document model for the editor.",
+  "type": "feature", "status": "inprogress", "phase": "p2", "order": 4,
+  "createdDate": "2026-01-25", "completedDate": null, "blockedBy": [],
+  "assignedTo": "codex", "claimedBySession": "sess-8812",
+  "updatedAt": "2026-03-14T08:40:00Z"
+}

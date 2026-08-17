@@ -1,0 +1,15 @@
+{
+  "version": "0.1.5",
+  "project": "Aurora",
+  "type": "application",
+  "language": "typescript",
+  "features": {
+    "tickets": true,
+    "issues": true,
+    "handovers": true,
+    "roadmap": true,
+    "reviews": true,
+    "bus": false
+  },
+  "futureSetting": "written by a newer storybloq than this reader knows"
+}

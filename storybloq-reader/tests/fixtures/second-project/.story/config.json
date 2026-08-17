@@ -1,0 +1,2 @@
+{ "version": "0.1.5", "project": "Beacon", "type": "service", "language": "python",
+  "features": { "tickets": true, "issues": true, "handovers": true, "roadmap": true, "reviews": true } }

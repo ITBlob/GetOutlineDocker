@@ -1,0 +1,6 @@
+{
+  "id": "T-003", "title": "Migration runner", "description": "Apply migrations on boot.",
+  "type": "task", "status": "complete", "phase": "p1", "order": 3, "parentTicket": "T-001",
+  "createdDate": "2026-01-11", "completedDate": "2026-01-22", "blockedBy": [],
+  "updatedAt": "2026-01-22T11:05:00Z"
+}

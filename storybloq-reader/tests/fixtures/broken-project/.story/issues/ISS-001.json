@@ -1,0 +1,5 @@
+{
+  "id": "ISS-001", "title": "Fractional order", "status": "open", "severity": "low",
+  "components": [], "impact": "none", "location": "x.go", "discoveredDate": "2026-01-02",
+  "relatedTickets": [], "order": 2.5, "updatedAt": "2026-01-02T09:00:00Z"
+}

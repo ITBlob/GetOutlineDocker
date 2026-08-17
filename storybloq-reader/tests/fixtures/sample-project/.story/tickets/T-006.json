@@ -1,0 +1,6 @@
+{
+  "id": "T-006", "title": "Offline queue", "description": "Buffer edits while disconnected.",
+  "type": "feature", "status": "open", "phase": "p2", "order": 6,
+  "createdDate": "2026-01-27", "completedDate": null, "blockedBy": ["T-999"],
+  "updatedAt": "2026-01-27T10:00:00Z"
+}

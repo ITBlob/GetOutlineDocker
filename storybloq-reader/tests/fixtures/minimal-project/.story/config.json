@@ -1,0 +1,4 @@
+{
+  "version": "0.1.5", "project": "Minimal", "type": "library", "language": "rust",
+  "features": { "tickets": true, "issues": true, "handovers": false, "roadmap": false, "reviews": false }
+}

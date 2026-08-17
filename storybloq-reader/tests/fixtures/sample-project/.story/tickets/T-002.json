@@ -1,0 +1,6 @@
+{
+  "id": "T-002", "title": "Define schema", "description": "Tables and migrations.",
+  "type": "task", "status": "complete", "phase": "p1", "order": 2, "parentTicket": "T-001",
+  "createdDate": "2026-01-10", "completedDate": "2026-01-18", "blockedBy": [],
+  "updatedAt": "2026-01-18T16:20:00Z"
+}

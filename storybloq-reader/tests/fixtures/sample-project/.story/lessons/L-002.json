@@ -1,0 +1,6 @@
+{
+  "id": "L-002", "title": "Poll the directory every second", "content": "Superseded by event-driven watching.",
+  "context": "Early prototype.", "source": "correction", "tags": ["fs"],
+  "reinforcements": 0, "lastValidated": "2026-01-15", "createdDate": "2026-01-15", "updatedDate": "2026-02-01",
+  "supersedes": null, "status": "deprecated", "updatedAt": "2026-02-01T09:00:00Z"
+}

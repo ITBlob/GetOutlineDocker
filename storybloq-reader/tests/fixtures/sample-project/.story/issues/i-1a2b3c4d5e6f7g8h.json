@@ -1,0 +1,7 @@
+{
+  "id": "i-1a2b3c4d5e6f7g8h", "displayId": "ISS-005",
+  "title": "Watcher misses events during checkout", "status": "inprogress", "severity": "critical",
+  "components": ["reader"], "impact": "Sidebar goes stale until restart.",
+  "location": "src/watching", "discoveredDate": "2026-03-12",
+  "relatedTickets": [], "updatedAt": "2026-03-12T09:00:00Z"
+}

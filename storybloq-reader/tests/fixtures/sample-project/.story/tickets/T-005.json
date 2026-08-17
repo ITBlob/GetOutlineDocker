@@ -1,0 +1,6 @@
+{
+  "id": "T-005", "title": "Collaborative cursors", "description": "Presence indicators.",
+  "type": "feature", "status": "open", "phase": "p2", "order": 5,
+  "createdDate": "2026-01-26", "completedDate": null, "blockedBy": ["T-004"],
+  "updatedAt": "2026-01-26T10:00:00Z"
+}

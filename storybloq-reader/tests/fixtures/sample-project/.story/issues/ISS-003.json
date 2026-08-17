@@ -1,0 +1,5 @@
+{
+  "id": "ISS-003", "title": "Inconsistent button padding", "status": "open", "severity": "medium",
+  "components": ["ui"], "impact": "Cosmetic.", "location": "app/components/Button.tsx",
+  "discoveredDate": "2026-02-18", "relatedTickets": [], "updatedAt": "2026-02-18T09:00:00Z"
+}

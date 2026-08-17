@@ -1,0 +1,6 @@
+{
+  "id": "T-001", "title": "Data layer", "description": "Umbrella for the persistence work.",
+  "type": "feature", "status": "open", "phase": "p1", "order": 1,
+  "createdDate": "2026-01-10", "completedDate": null, "blockedBy": [],
+  "updatedAt": "2026-01-10T09:00:00Z"
+}
