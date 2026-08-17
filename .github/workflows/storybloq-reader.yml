@@ -1,0 +1,90 @@
+name: Storybloq Reader
+
+# Scoped to the reader so it never runs for Outline changes, and Outline's own
+# workflows never run for reader changes.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "storybloq-reader/**"
+      - ".github/workflows/storybloq-reader.yml"
+  pull_request:
+    paths:
+      - "storybloq-reader/**"
+      - ".github/workflows/storybloq-reader.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    working-directory: storybloq-reader
+
+jobs:
+  # Fast feedback on the platform-neutral layers, which is where the parsing,
+  # aggregation, and watcher logic lives.
+  core-tests:
+    name: Core and platform tests (Linux)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Test Core
+        run: dotnet test tests/Storybloq.Reader.Core.Tests/Storybloq.Reader.Core.Tests.csproj --configuration Release --logger "trx;LogFileName=core.trx"
+
+      - name: Test Platform
+        run: dotnet test tests/Storybloq.Reader.Platform.Tests/Storybloq.Reader.Platform.Tests.csproj --configuration Release --logger "trx;LogFileName=platform.trx"
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-linux
+          path: storybloq-reader/**/TestResults/*.trx
+          if-no-files-found: ignore
+
+  # The only place the WinUI app can actually be compiled, and the only place the
+  # watcher runs against ReadDirectoryChangesW rather than inotify.
+  windows-build:
+    name: Build and publish (Windows)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Restore
+        run: dotnet restore StorybloqReader.sln
+
+      - name: Build
+        run: dotnet build StorybloqReader.sln --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test StorybloqReader.sln --configuration Release --no-build --logger "trx;LogFileName=windows.trx"
+
+      # Unpackaged and self-contained: produces a runnable folder with no MSIX and
+      # no code-signing certificate, so the artifact below is directly usable.
+      - name: Publish unpackaged app
+        run: dotnet publish src/Storybloq.Reader.App/Storybloq.Reader.App.csproj --configuration Release --runtime win-x64 --self-contained true --output publish/win-x64
+
+      - name: Upload app
+        uses: actions/upload-artifact@v4
+        with:
+          name: storybloq-reader-win-x64
+          path: storybloq-reader/publish/win-x64
+          if-no-files-found: error
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-windows
+          path: storybloq-reader/**/TestResults/*.trx
+          if-no-files-found: ignore
